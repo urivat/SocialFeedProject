@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Post from './Components/post/Post';
+
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
+import CreatePost from './Components/CreatePost/CreatePost';
 
 function App() {
   const [entries, setEntries] = useState([
@@ -15,9 +16,13 @@ function addNewPost(entry){
   
   
   return (
+    
     <div>
       <Post appEntries={entries}/>
+      <DisplayPosts appEntries={entries}/>
+      <CreatePost appEntries={entries}/>
     </div>
+
   );
 }
 
