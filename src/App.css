@@ -6,5 +6,11 @@
     border-style:solid;
     border-color: black;
     padding: 1em;
-    margin: auto;
+    margin: 1em;
+    
+}
+.center {
+    margin:auto;
+    width: 50%;
+    
 }

@@ -1,12 +1,11 @@
-const DisplayPosts = (props) => {
-    return ( 
-        <table>
-         <tbody>
-             <th><td>{}</td></th>
-             
+import Post from "../Post/Post";
 
-         </tbody>
-          </table> 
+const DisplayPosts = ({appEntries}) => {
+    return ( 
+      <ul>
+          {appEntries.map((entry) => <li><Post entry= {entry} /></li>)}
+
+      </ul>
      );
 }
  

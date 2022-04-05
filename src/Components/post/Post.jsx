@@ -1,25 +1,10 @@
-const Post = (props) => {
+const Post = ({entry}) => {
   return (
-    <table>
-      <thead>
-        {props.appEntries.map((entry) => {
-          return (
-            <tr>
-              <td>{entry.name}</td>
-            </tr>
-          );
-        })}
-      </thead>
-      <tbody>
-        {props.appEntries.map((entry) => {
-          return (
-            <tr>
-              <td>{entry.post}</td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
+    <div>
+      <h2> {entry.name}</h2>
+      <p>{entry.post}</p>
+      <button>button</button>
+    </div>
   );
 };
 
