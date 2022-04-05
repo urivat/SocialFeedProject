@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 const CreatePost = (props) => {
-  const [name, setName] = useState("rashad");
-  const [post, setPost] = useState("hello world");
-  const [likeStatus, setLikeStatus] = useState(true);
+  const [name, setName] = useState("");
+  const [post, setPost] = useState("");
+  
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -12,7 +12,7 @@ const CreatePost = (props) => {
       post: post,
     };
     console.log(newEntry);
-    props.addNewEntryProperty(newEntry);
+    props.addNewPostProperties(newEntry);
   }
 
   return (
@@ -34,7 +34,7 @@ const CreatePost = (props) => {
         />
       </div>
       <div>
-        <button type="submit">Add Post</button>
+        <button type="submit">Post</button>
       </div>
     </form>
   );

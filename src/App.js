@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Post from './Components/Post/Post';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 import CreatePost from './Components/CreatePost/CreatePost';
 
@@ -9,7 +9,7 @@ function App() {
   ])
   
 function addNewPost(entry){
-  let tempentries = [entries, entry];
+  let tempentries = [...entries, entry ];
 
   setEntries(tempentries);
 }
@@ -19,8 +19,9 @@ function addNewPost(entry){
     
     <div>
       <Post appEntries={entries}/>
-      <DisplayPosts appEntries={entries}/>
-      <CreatePost appEntries={entries}/>
+      <CreatePost addNewPostProperties={addNewPost}/>
+       {/* <DisplayPosts appEntries={entries}/> */} 
+       
     </div>
 
   );
