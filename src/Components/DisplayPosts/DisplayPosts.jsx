@@ -2,7 +2,7 @@ const DisplayPosts = (props) => {
     return ( 
         <table>
          <tbody>
-             <th><td>{entry.name}</td></th>
+             <th><td>{}</td></th>
              
 
          </tbody>
