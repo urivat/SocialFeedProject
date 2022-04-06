@@ -3,7 +3,7 @@ import DisplayPosts from "./Components/DisplayPosts/DisplayPosts";
 import CreatePost from "./Components/CreatePost/CreatePost";
 import "./App.css";
 import "./Components/Post/Post.css";
-import NavBar from "./NavBar/NavBar";
+
 function App() {
   const [entries, setEntries] = useState([
     { name: "rashad", post: "N/A" },
@@ -27,7 +27,6 @@ function App() {
             </h3>
           </div>
         </div>
-
         <div className="col-lg-6">
           <div className="border-box">
             <CreatePost addNewPostProperties={addNewPost} />
