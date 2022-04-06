@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './CreatePost.css'
 
 const CreatePost = (props) => {
   const [name, setName] = useState("");
@@ -16,7 +17,7 @@ const CreatePost = (props) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form-grid" >
       <div className="form-group">
         <label>Name</label>
         <input
@@ -36,7 +37,7 @@ const CreatePost = (props) => {
         ></textarea>
       </div>
       <div>
-        <button type="submit">Post</button>
+        <button className='button'type="submit">Post</button>
       </div>
     </form>
   );

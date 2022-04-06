@@ -25,11 +25,11 @@ const Post = ({entry}) => {
     }
   }
   return (
-    <div>
-      <h2> {entry.name}</h2>
+    <div className="table">
+      <h2>{entry.name}</h2>
       <p>{entry.post}</p>
-      <button className={buttonClassLike} onClick={handleClick}>button</button>
-      <button className={buttonClassDislike} onClick ={handleClickDislike} style = {{'margin-left': "1em"}}>button</button>
+      <button className={buttonClassLike}  onClick={handleClick}>Like</button>
+      <button className={buttonClassDislike} onClick ={handleClickDislike} style = {{'margin-left': "1em"}}>Dislike</button>
     </div>
   );
 };

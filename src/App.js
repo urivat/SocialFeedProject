@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Post from "./Components/Post/Post";
 import DisplayPosts from "./Components/DisplayPosts/DisplayPosts";
 import CreatePost from "./Components/CreatePost/CreatePost";
 import "./App.css";
+import "./Components/Post/Post.css"
 function App() {
   const [entries, setEntries] = useState([
     { name: "rashad", post: "N/A" },
