@@ -5,7 +5,7 @@ const DisplayPosts = ({appEntries}) => {
     
     return ( 
       <ul>
-          {appEntries.map((entry) => <li><Post entry= {entry} /></li>)}
+          {appEntries.map((entry) => <li key={entry.name}><Post entry= {entry}/></li>)}
 
       </ul>
      );

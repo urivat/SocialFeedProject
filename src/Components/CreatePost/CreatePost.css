@@ -1,15 +1,18 @@
-button {
+/* button {
     border-radius: 30px;
-    color:white;
+    
     text-align: center;
     padding: 10x 24px;
     font-size: 10px;
-    width: 12%
     
     
-}
+    
+} */
 .button {
     background-color: green;
+    border-radius: 30px;
+    color:white;
+    width: 12%
 }
 .form-grid {
     display: grid;
